@@ -1,0 +1,10 @@
+Em Python podemos ler arquivos de texto.
+Em Python podemos fazer programas cientificos.
+Em Python podemos acessar conteudo de sites.
+Em Python podemos escrever classes e trabalhor com orientacao a objetos.
+Em Python podemos guardar funcoes em arquivos chamados modulos.
+Em Python podemos usar modulos em nossos programas usando import.
+Em Python podemos chamar outros modulos quando estivermos escrevendo uma classe.
+Em Python podemos armazenar varias classes em um modulo.
+Em Python podemos chamar classes especificas de um modulo usando a notacao: "from modulo import funcao"
+Em Python podemos acessar arquivos em outros diretorios.
