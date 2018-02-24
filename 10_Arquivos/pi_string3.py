@@ -3,18 +3,17 @@
 # Python Crash Course
 # Autor do livro: Eric Matthes
 # Autor: Washington Candeia
-# pi_string.py, p.260
+# pi_string.py, p.262
 ##-------------------------------
 
-filename = 'pi_digits.txt'
+filename = 'pi_million_digits.txt'
 
 with open(filename) as file_object:
     lines = file_object.readlines()
 
-# Trabalhando fora do bloco with
 pi_string = ''
 for line in lines:
-    pi_string += line.rstrip()
+    pi_string += line.strip()
 
-print(pi_string)
+print(pi_string[:52] + '...')
 print(len(pi_string))

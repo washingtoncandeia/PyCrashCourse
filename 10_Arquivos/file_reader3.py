@@ -3,9 +3,10 @@
 # Python Crash Course
 # Autor do livro: Eric Matthes
 # Autor: Washington Candeia
-# file_reader.py, p.255
+# file_reader.py, p.256
 ##-------------------------------
 
 with open('pi_digits.txt') as file_object:
-    contents = file_object.read()
+    contents = file_object.read().rstrip()
     print(contents)
+    t
