@@ -5,7 +5,6 @@
 # pi_string.py, p.260
 ##-----------------------------
 
-# path = "C:\\Users\\Wash Araujo\\Documents\\Pycrash\\book_resources\\ehmatthes-pcc\\chapter_10\\"
 filename = "pi_million_digits.txt"
 
 with open(filename) as file_obj:
@@ -25,3 +24,4 @@ print(pi_string[:52] + '...')
 
 # 4. Mostrar o tamanho de pi_string
 print(len(pi_string))
+

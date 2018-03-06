@@ -1,16 +1,13 @@
-##----------------------------------
-# Cap.10 - Arquivos e Exceções
-# Python Crash Course - Eric Matthes
-# Autor: Washington Candeia
-##----------------------------------
-
+##-----------------------------
+# Pycrash Course
+# Eric Matthes
+# Cap. 10 - Arquivos
+# write_message.py, p.264
+##-----------------------------
 filename = 'programming.txt'
 
-with open(filename, 'w') as file_object:
-    file_object.write("I love programming.\n")
-    file_object.write("I love creating new games.\n")
+with open(filename, 'w') as file_obj:
+    file_obj.write('I love programming!')
 
-# Concatenando dados em um arquivo
-with open(filename, 'a') as file_object:
-    file_object.write("I also love finding meaning in large datasets.\n")
-    file_object.write("I love creating apps that can run in a browser.\n")
+with open(filename, 'r') as obj:
+    print(obj.read())

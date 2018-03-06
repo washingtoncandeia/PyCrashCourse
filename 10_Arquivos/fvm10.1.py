@@ -1,28 +1,24 @@
-##-------------------------------
-# Cap.10 - Arquivos e exceções
-# Python Crash Course
-# Autor do livro: Eric Matthes
-# Autor: Washington Candeia
+##-----------------------------
+# Pycrash Course
+# Eric Matthes
+# Cap. 10 - Arquivos
 # Faça você mesmo, p.263
-##------------------------------
+##-----------------------------
 
-# 10.1 - Aprendendo Python
-# 1. Ler o arquivo inteiro
+#10.1 - Aprendendo Python
+# 1. Conteúdo inteiro
 with open('learning_python.txt') as obj:
-    conteudo = obj.read()
-    print(conteudo.rstrip())
+    print(obj.read())
 
-
-# 2. Percorrer o objeto em laço
+# 2. Em laço
 with open('learning_python.txt') as obj:
-    for linha in obj:
-        print(linha.rstrip())
+    for line in obj:
+        print(line.rstrip())
 
-
-# 3. Armazenar em uma lista
+# 3. Armazenando linhas em uma lista e trabalhando fora do bloco
 with open('learning_python.txt') as obj:
-    lista = obj.readlines()
+    lines = obj.readlines()
 
-# Fora do bloco with
-for l in lista:
-    print(l.rstrip())
+# Trabalhando fora do bloco with
+for line in lines:
+    print(line.rstrip())
