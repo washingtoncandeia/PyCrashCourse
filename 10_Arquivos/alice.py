@@ -1,15 +1,21 @@
-##----------------------------------
-# Cap.10 - Arquivos e Exceções
-# Python Crash Course - Eric Matthes
+##-------------------------------
+# Cap.10 - Arquivos e exceções
+# Python Crash Course
+# Eric Matthes
 # Autor: Washington Candeia
-# p.272
-##----------------------------------
+# division.py, p.270
+##-------------------------------
 
 filename = 'alice.txt'
-# Usando instrução try em arquivos
+
+# Leitura do arquivo
 try:
-    with open(filename) as f_object:
-        contents = f_object.read()
+    with open(filename) as file_obj:
+        contents = file_obj.read()
+
 except FileNotFoundError:
-    print("O arquivo '" + filename + "' não existe ou não está neste diretório.")
+    msg = "Sorry, the file " + filename + " does not exist."
+    print(msg)
+else:
+    print(contents)
 
