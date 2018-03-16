@@ -1,25 +1,28 @@
-##----------------------------------
-# Cap.10 - Arquivos e Exceções
-# Python Crash Course - Eric Matthes
+##-------------------------------
+# Cap.10 - Arquivos e exceções
+# Python Crash Course
+# Eric Matthes
 # Autor: Washington Candeia
-# p.270
-##----------------------------------
+# division.py, p.270
+##-------------------------------
 
-print('Dê-me dois números e eu os dividirei para você.')
-print("(Digite 'sair' para encerrar).")
+print("Give two numbers, and I'll divide them")
+print("Enter 'q' to quit.")
 
-# Iniciando laço while
+# Laço while
 while True:
-    first_number = input('\nDigite o primeiro número: ')
-    if first_number == 'sair':
+    first_number = input('First number: ')
+    if first_number == 'q':
         break
-    second_number = input('Digite o segundo número: ')
-    if second_number == 'sair':
-        break
-    # Iniciar bloco de instrução Try
+    second_number = input('Second number: ')
+
+    # Bloco try-except
     try:
         answer = int(first_number) / int(second_number)
+
     except ZeroDivisionError:
-        print('Você não pode dividir um número por zero!')
+        print("You can't divide by zero.")
+
     else:
-        print(answer)
+        print("Answer: " + str(answer))
+
