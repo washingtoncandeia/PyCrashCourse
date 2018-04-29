@@ -48,3 +48,17 @@ class Texto():
             # Saída para texto:
             print("No arquivo '" + nome_arquivo + "' há, aproximadamente, "
                   + str(num_palavras) + " palavras.")
+                  
+                  
+    def dict_to_text(dictionary, filename='dict_to_text.txt'):
+    """Usa informações de um dicinário para escrever textos."""
+    for keys, values in dictionary.items():
+        try:
+            with open(filename, 'a') as obj:
+                obj.write('As linguagens favoritas de ' + keys.title() + ' são: \n')
+                for l in values:
+                    obj.write('- ' + l.title() + '\n')
+        except FileNotFoundError:
+            print("\nDesculpe, o arquivo '" + filename + "' não existe ou não está neste diretório.")
+            
+            
