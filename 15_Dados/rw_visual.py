@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from random_walk import RandomWalk
 
 # Cria um passeio aleatório e plota os pontos
-rw = RandomWalk()   # Instancia, cria passeio aletório e o armazena em rw
+rw = RandomWalk()   # Intancia, cria passeio aletório e o armazena em rw
 rw.fill_walk()
 
 # Plotar o gráfico
